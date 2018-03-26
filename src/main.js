@@ -25,7 +25,7 @@ export function main()
 
             for(let i = 0; i <= response.data.length; i++)
             {
-              $('#details').text("<li><strong>" + response.data[i].practices[0].name + "</strong>" +
+              $('#details').append("<li><strong>" + response.data[i].practices[0].name + "</strong>" +
                                       "<ul>" +
                                         "<li>Address: " + response.data[i].practices[0].visit_address.street + "</li>" +
                                         "<li>Phone: " +  phonify(response.data[i].practices[0].phones[0].number) + "</li>" +
